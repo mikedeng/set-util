@@ -1,0 +1,43 @@
+{
+  "name": "set-util",
+  "version": "1.0.4",
+  "description": "utils",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mikedeng/set-util.git"
+  },
+  "keywords": [
+    "utils",
+    "for",
+    "data"
+  ],
+  "author": "Mike Dune",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikedeng/set-util/issues"
+  },
+  "homepage": "https://github.com/mikedeng/set-util#readme",
+  "peerDependencies": {
+    "moment": "^2.24.0",
+    "react": "^16.8.6"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.4.4",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "webpack-cli": "^3.3.2"
+  }
+}
