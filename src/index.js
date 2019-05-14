@@ -1,6 +1,9 @@
 import moment from 'moment';
 
 const YMDHms = 'YYYY-MM-DD HH:mm:ss';
+/* 
+  @value 传入值，moment可以接受的值
+ */
 export function formatDate(value, format = YMDHms, emptyPlaceholder = '') {
   if(!value) {
     return emptyPlaceholder;
@@ -11,7 +14,7 @@ export function formatDate(value, format = YMDHms, emptyPlaceholder = '') {
     return emptyPlaceholder;
   }
 
-  return newVal.format(format);
+  return newVal.format(format ? format : YMDHms);
 }
 
 export function objectToArray(object, mapFn) {
