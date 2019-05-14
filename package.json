@@ -5,7 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -36,8 +37,12 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
     "webpack-cli": "^3.3.2"
   }
 }
