@@ -28,17 +28,24 @@ describe('Exists', () => {
       assert.equal(formatDate('', '', '--'), '--');
       assert.equal(formatDate('', '', '无'), '无');
     })
-
-    // it('should yield the right formate date', () => {
-    //   assert.equal(formatDate('','' , '--'), '--');
-    //   assert.equal(formatDate('2019-01-01 01:00:00'), '2019-01-01 01:00:00');
-    //   assert.equal(formatDate('2019-01-01 01:00:00', 'YYYY-MM-DD HH:mm:ss'), '2019-01-01 01:00:00');
-    // })
   });
 
   describe('#objectToArray()', () => {
     it('objectToArray', () => {
       assert.exists(objectToArray);
+    });
+
+    it('test valid', () => {
+      const obj = {
+        a: 1, 
+        b: 2
+      }
+
+      const array = objectToArray(obj, (key, value) => {
+        return {key, value}
+      });
+
+      assert.deepEqual(array, [{ key: 'a', value: 1}, { key: 'b', value: 2}]);
     });
   });
 });
