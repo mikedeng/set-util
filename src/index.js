@@ -1,5 +1,5 @@
 import moment from 'moment';
-console.log(1);
+console.log(2);
 
 const YMDHms = 'YYYY-MM-DD HH:mm:ss';
 /* 
